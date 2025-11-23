@@ -1,0 +1,137 @@
+@font-face {
+    font-family:TT Lakes ;
+    src: url(font/TT\ Lakes\ Neue\ Trial\ DemiBold.ttf);
+    font-weight: bold;
+}
+
+@font-face {
+    font-family: TT lakes;
+    src: url(font/TT\ Lakes\ Neue\ Trial\ Medium.ttf);
+    font-weight: medium;
+}
+
+* {
+    font-family: TT Lakes;
+    color: #1B1C21;
+    font-size: 1.1rem;
+}
+
+/* body {
+    margin-left: 20px;
+} */
+
+.mobile-menu {
+    position: fixed;
+    top: auto;
+    width: 320px;
+    height: 100vh;
+    margin-left: 20px;
+    width: 320px;
+    overflow-y: auto;
+    background-color: #FFFFFF;
+}
+
+.mobile-menu__header {
+    /* width: 320px; */
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+}
+
+.mobile-menu__icon {
+    border: none;
+    box-shadow: none;
+    appearance: none;
+    background: transparent;
+    padding: 0;
+}
+
+.logo {
+    margin-right: auto;
+}
+
+.mobile-menu__list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+
+}
+
+.mobile-menu__nav {
+    display: flex;
+    margin-top: 50px;
+}
+
+.mobile-menu__link {
+    text-decoration: none;
+    display: inline-block;
+    font-weight: 500;
+    transition: opacity 0.3s ease, filter 0.3s ease;
+}
+
+.mobile-menu__link:hover {
+    font-weight: bold;
+    opacity: 0.9;
+    filter: brightness(0.8);
+    text-shadow: 0 3px 6px rgba(0,0,0,0.5);
+}
+
+.mobile-menu__item {
+    margin: 20px 0;
+}
+
+.mobile-menu__item {
+    position: relative;
+    /* padding-left: 16px; */
+}
+
+.mobile-menu__item:first-child::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    height: 25px;
+    width: 6px;
+    background-color:#41F6D7;
+    border-radius: 0 6px 6px 0;
+    top: 50%;
+    transform: translateY(-50%);
+    /* margin-left: 0; */
+}
+
+.mobile-menu__contacts{ 
+margin-top: 220px;
+}
+
+.mobile-menu__email {
+    display: block;
+    text-decoration: none;
+}
+
+.mobile-menu__phone {
+    text-decoration: none;
+}
+
+.mobile-menu__languages>a {
+    text-decoration: none;
+    transition: opacity 0.3s ease, filter 0.3s ease;
+    }
+
+.mobile-menu__languages>a:hover {
+    filter: brightness(0.7);
+    opacity: 0.9;
+    font-weight: bold;
+}
+
+.mobile-menu__languages{
+    margin-top: 25px;
+
+}
+
+.mobile-menu__contacts-icon>.mobile-menu__icon {
+    margin-right: 15px;
+}
+
+.mobile-menu__phone {
+    display: block;
+    font-weight: bold;
+}
