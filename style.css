@@ -16,29 +16,30 @@
     font-size: 1.1rem;
 }
 
-/* body {
-    margin-left: 20px;
-} */
+body {
+    margin: 0;
+}
 
-.mobile-menu {
+.side-menu {
     position: fixed;
     top: auto;
     width: 320px;
     height: 100vh;
-    margin-left: 20px;
+    box-sizing: border-box;
+    padding: 24px;
+    box-shadow: 20px 0 40px rgba(0, 0, 0, 0.08);
     width: 320px;
     overflow-y: auto;
     background-color: #FFFFFF;
 }
 
-.mobile-menu__header {
-    /* width: 320px; */
+.side-menu__header {
     display: flex;
     justify-content: center;
     gap: 16px;
 }
 
-.mobile-menu__icon {
+.side-menu__icon {
     border: none;
     box-shadow: none;
     appearance: none;
@@ -50,42 +51,42 @@
     margin-right: auto;
 }
 
-.mobile-menu__list {
+.side-menu__list {
     list-style: none;
     padding: 0;
     margin: 0;
 
 }
 
-.mobile-menu__nav {
+.side-menu__nav {
     display: flex;
     margin-top: 50px;
 }
 
-.mobile-menu__link {
+.side-menu__link {
     text-decoration: none;
+    padding-left: 10px;
     display: inline-block;
     font-weight: 500;
     transition: opacity 0.3s ease, filter 0.3s ease;
 }
 
-.mobile-menu__link:hover {
+.side-menu__link:hover {
     font-weight: bold;
     opacity: 0.9;
     filter: brightness(0.8);
     text-shadow: 0 3px 6px rgba(0,0,0,0.5);
 }
 
-.mobile-menu__item {
+.side-menu__item {
     margin: 20px 0;
 }
 
-.mobile-menu__item {
+.side-menu__item {
     position: relative;
-    /* padding-left: 16px; */
 }
 
-.mobile-menu__item:first-child::before {
+.side-menu__item:first-child::before {
     content: '';
     position: absolute;
     left: 0;
@@ -95,43 +96,42 @@
     border-radius: 0 6px 6px 0;
     top: 50%;
     transform: translateY(-50%);
-    /* margin-left: 0; */
 }
 
-.mobile-menu__contacts{ 
+.side-menu__contacts{ 
 margin-top: 220px;
 }
 
-.mobile-menu__email {
+.side-menu__email {
     display: block;
     text-decoration: none;
 }
 
-.mobile-menu__phone {
+.side-menu__phone {
     text-decoration: none;
 }
 
-.mobile-menu__languages>a {
+.side-menu__languages>a {
     text-decoration: none;
     transition: opacity 0.3s ease, filter 0.3s ease;
     }
 
-.mobile-menu__languages>a:hover {
+.side-menu__languages>a:hover {
     filter: brightness(0.7);
     opacity: 0.9;
     font-weight: bold;
 }
 
-.mobile-menu__languages{
+.side-menu__languages{
     margin-top: 25px;
 
 }
 
-.mobile-menu__contacts-icon>.mobile-menu__icon {
+.side-menu__contacts-icon>.side-menu__icon {
     margin-right: 15px;
 }
 
-.mobile-menu__phone {
+.side-menu__phone {
     display: block;
     font-weight: bold;
 }
