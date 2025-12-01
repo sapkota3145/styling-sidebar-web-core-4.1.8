@@ -1,6 +1,6 @@
 @font-face {
     font-family:TT Lakes ;
-    src: url(font/TT\ Lakes\ Neue\ Trial\ DemiBold.ttf);
+    src: url(font/TT\ Lakes\ Neue\ Trial\ Bold.ttf);
     font-weight: bold;
 }
 
@@ -13,7 +13,7 @@
 * {
     font-family: TT Lakes;
     color: #1B1C21;
-    font-size: 1.1rem;
+    font-size: 16px;
 }
 
 body {
@@ -21,6 +21,8 @@ body {
 }
 
 .side-menu {
+    display: flex;
+    flex-direction: column;
     position: fixed;
     top: auto;
     width: 320px;
@@ -37,6 +39,7 @@ body {
     display: flex;
     justify-content: center;
     gap: 16px;
+    margin:24px;
 }
 
 .side-menu__icon {
@@ -44,7 +47,8 @@ body {
     box-shadow: none;
     appearance: none;
     background: transparent;
-    padding: 0;
+    padding-left: 0;
+    padding-right: 15px;
 }
 
 .logo {
@@ -60,6 +64,7 @@ body {
 
 .side-menu__nav {
     display: flex;
+    flex-direction: column;
     margin-top: 50px;
 }
 
@@ -68,7 +73,8 @@ body {
     padding-left: 10px;
     display: inline-block;
     font-weight: 500;
-    transition: opacity 0.3s ease, filter 0.3s ease;
+    box-sizing: border-box;
+    text-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
 }
 
 .side-menu__link:hover {
@@ -79,11 +85,8 @@ body {
 }
 
 .side-menu__item {
-    margin: 20px 0;
-}
-
-.side-menu__item {
-    position: relative;
+ padding: 12px 0;
+ position: relative;
 }
 
 .side-menu__item:first-child::before {
@@ -103,12 +106,17 @@ margin-top: 220px;
 }
 
 .side-menu__email {
-    display: block;
+    display: inline-block;
     text-decoration: none;
+    height: 24px;
+
 }
 
 .side-menu__phone {
+    display: inline-block;
     text-decoration: none;
+    font-size: 24px;
+    height: 32px;
 }
 
 .side-menu__languages>a {
@@ -125,10 +133,6 @@ margin-top: 220px;
 .side-menu__languages{
     margin-top: 25px;
 
-}
-
-.side-menu__contacts-icon>.side-menu__icon {
-    margin-right: 15px;
 }
 
 .side-menu__phone {
