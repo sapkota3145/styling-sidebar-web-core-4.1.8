@@ -28,7 +28,6 @@ body {
     width: 320px;
     height: 100vh;
     box-sizing: border-box;
-    padding: 24px;
     box-shadow: 20px 0 40px rgba(0, 0, 0, 0.08);
     width: 320px;
     overflow-y: auto;
@@ -102,7 +101,8 @@ body {
 }
 
 .side-menu__contacts{ 
-margin-top: 220px;
+margin-top: auto;
+padding: 20px;
 }
 
 .side-menu__email {
